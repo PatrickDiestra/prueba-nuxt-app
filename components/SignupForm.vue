@@ -31,10 +31,6 @@
     >
       Enviar
     </button>
-
-    <div style="margin-top: 20px; font-size: 12px; color: #999;">
-      Estado actual: {{ debugState }}
-    </div>
   </form>
 </template>
 
@@ -52,7 +48,6 @@
     },
     methods: {
       handleSubmitForm (event) {
-        console.log({ event })
         const formData = new FormData(event.target)
 
         const nameValue = formData.get('name')
